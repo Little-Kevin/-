@@ -44,7 +44,6 @@ public class demo {
 		String cur_province = city[0].province;
 		province[index2] = new Province();
 		province[index2].name = cur_province;
-//		System.out.println(cur_province);
 		for (int i = 0; i < city.length; i++) {
 			if (city[i].province.equals(cur_province)) {
 //				System.out.println(city[i].name + "\t" + city[i].num);
@@ -53,6 +52,7 @@ public class demo {
 				index2++;
 				cur_province = city[i].province;
 				province[index2] = new Province();
+				province[index2].sum += city[i].num;
 				province[index2].name = cur_province;
 //				System.out.println("\n" + cur_province);
 			}
@@ -120,6 +120,5 @@ public class demo {
 
 }
 /*
- C:\Users\盐\Desktop\软件工程\实验四\yq_in.txt C:\\Users\\盐\\Desktop\\out04.txt
+ * C:\Users\盐\Desktop\软件工程\实验四\yq_in.txt C:\\Users\\盐\\Desktop\\out04.txt
  */
- 
